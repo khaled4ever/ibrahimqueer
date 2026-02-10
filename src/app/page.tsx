@@ -30,8 +30,41 @@ import { Phone, MapPin, Clock } from 'lucide-react';
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-banner');
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'AutoRepair',
+    name: 'المركز الفني للسيارات',
+    image: heroImage?.imageUrl,
+    url: 'https://auto-repair-center-sa.com', // Placeholder URL
+    telephone: '+966555123456',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '123 شارع الصناعية',
+      addressLocality: 'الرياض',
+      addressCountry: 'SA',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Saturday',
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+      ],
+      opens: '08:00',
+      closes: '19:00',
+    },
+    sameAs: ['https://wa.me/966555123456'],
+  };
+
   return (
     <div className="flex flex-col min-h-[100dvh] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <section className="relative w-full h-[60vh] md:h-[80vh]">
         {heroImage && (
           <Image
