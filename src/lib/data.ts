@@ -10,7 +10,6 @@ import {
 
 import {
   AudiLogo,
-  MercedesLogo,
   PorscheLogo,
   VwLogo,
 } from '@/components/icons';
@@ -84,7 +83,7 @@ export const brands: {
   Logo?: React.FC<React.SVGProps<SVGSVGElement>>;
   src?: string;
 }[] = [
-  { name: 'Mercedes', Logo: MercedesLogo, type: 'component' },
+  { name: 'Mercedes', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mercedes.svg', type: 'image' },
   { name: 'BMW', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/bmw.svg', type: 'image' },
   { name: 'Audi', Logo: AudiLogo, type: 'component' },
   { name: 'Porsche', Logo: PorscheLogo, type: 'component' },
