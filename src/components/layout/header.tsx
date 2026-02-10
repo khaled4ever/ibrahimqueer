@@ -1,11 +1,17 @@
 'use client';
-import { Wrench } from 'lucide-react';
+import { Wrench, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 import { useState, useEffect } from 'react';
+import { services } from '@/lib/data';
 
 const navLinks = [
-  { href: '#services', label: 'خدماتنا' },
   { href: '#bodywork', label: 'السمكرة والدهان' },
   { href: '#contact', label: 'تواصل معنا' },
 ];
@@ -38,6 +44,20 @@ export function Header() {
           </span>
         </a>
         <nav className="hidden md:flex items-center gap-6">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 font-semibold text-foreground/80 hover:text-primary transition-colors focus:outline-none">
+              <span>خدماتنا</span>
+              <ChevronDown className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              {services.map((service) => (
+                <DropdownMenuItem key={service.title} asChild>
+                  <a href="#services">{service.title}</a>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           {navLinks.map((link) => (
             <a
               key={link.href}
