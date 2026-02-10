@@ -21,7 +21,7 @@ export const services = [
   {
     title: 'توضيب المكائن والجيربوكس',
     icon: Cog,
-    shortDescription: 'إعادة بناء وتوضيب المحركات وناقلات الحركة بأعلى دقة.',
+    shortDescription: 'إعادة بناء وتوضيب المحركات وناقلات الحركة للسيارات الألمانية والأوروبية والصينية بأعلى دقة.',
     aiExplanation:
       'نتفهم أن المحرك وناقل الحركة هما قلب السيارة. لهذا، نقدم خدمة توضيب شاملة تعيد لهما الحياة. باستخدام قطع غيار أصلية ومعايير تصنيع دقيقة، نضمن استعادة الأداء الأمثل والكفاءة الكاملة لسيارتك.',
     image: 'engine-repair',
@@ -89,8 +89,8 @@ export const brands: {
 ];
 
 export const bodyworkImages = [
-  { id: 'bodywork-before-1', label: 'قبل' },
-  { id: 'bodywork-after-1', label: 'بعد' },
-  { id: 'bodywork-before-2', label: 'قبل' },
-  { id: 'bodywork-after-2', label: 'بعد' },
+  { id: 'bodywork-before-1' },
+  { id: 'bodywork-after-1' },
+  { id: 'bodywork-before-2' },
+  { id: 'bodywork-after-2' },
 ];
