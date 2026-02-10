@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-banner",
-      "description": "A modern auto repair shop with a sleek German sports car on a hydraulic lift, illuminated by bright, clean lighting.",
-      "imageUrl": "https://images.unsplash.com/photo-1632733711679-529326f6db12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhdXRvJTIwcmVwYWlyfGVufDB8fHx8MTc3MDY0Nzc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "auto repair"
+      "description": "A hero banner for 'المركز الفني للسيارات' showing various luxury cars and a mechanic at work.",
+      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/banar.png",
+      "imageHint": "car banner"
     },
     {
       "id": "mechanics",
