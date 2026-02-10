@@ -86,6 +86,7 @@ export const brands: {
   { name: 'Jaguar', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/jaguar.svg', type: 'image' },
   { name: 'Rolls Royce', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/rolls-royce.svg', type: 'image' },
   { name: 'Mini', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mini.svg', type: 'image' },
+  { name: 'Changan', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/Changan-Symbol-scaled.png', type: 'image' },
 ];
 
 export const bodyworkImages = [

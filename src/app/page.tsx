@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div>
             <h2 className="font-headline text-3xl font-bold text-center mb-8 text-primary">
-              نتخصص في أرقى الماركات العالمية
+              نتخصص في أرقى الماركات العالمية والصينية
             </h2>
           </div>
           <div>
@@ -110,7 +110,7 @@ export default function Home() {
                             alt={brand.name}
                             width={100}
                             height={100}
-                            className="h-full w-auto"
+                            className="h-full w-auto object-contain"
                           />
                         )}
                       </Card>
