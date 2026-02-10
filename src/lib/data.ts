@@ -82,7 +82,7 @@ export const brands: {
   { name: 'Porsche', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/porsche.svg', type: 'image' },
   { name: 'Volkswagen', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/vw.svg', type: 'image' },
   { name: 'Bentley', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/bentley.svg', type: 'image' },
-  { name: 'Land Rover', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/land-rover.svg', type: 'image' },
+  { name: 'Land Rover', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/landrover.svg', type: 'image' },
   { name: 'Jaguar', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/jaguar.svg', type: 'image' },
   { name: 'Rolls Royce', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/rolls-royce.svg', type: 'image' },
   { name: 'Mini', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mini.svg', type: 'image' },
