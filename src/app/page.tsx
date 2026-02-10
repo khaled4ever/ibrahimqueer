@@ -22,7 +22,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { services, brands, bodyworkImages } from '@/lib/data';
 import { Phone, MapPin, Clock } from 'lucide-react';
@@ -85,42 +84,23 @@ export default function Home() {
               نتخصص في أرقى الماركات العالمية والصينية
             </h2>
           </div>
-          <div>
-            <Carousel
-              opts={{
-                align: 'start',
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {brands.map((brand, index) => (
-                  <CarouselItem
-                    key={index}
-                    className="basis-1/3 md:basis-1/4 lg:basis-1/5"
-                  >
-                    <div className="p-1">
-                      <Card className="flex items-center justify-center p-6 h-32 bg-card hover:bg-card/90 transition-colors">
-                        {brand.type === 'component' && brand.Logo && (
-                          <brand.Logo className="h-full w-auto text-foreground" />
-                        )}
-                        {brand.type === 'image' && brand.src && (
-                          <Image
-                            src={brand.src}
-                            alt={brand.name}
-                            width={100}
-                            height={100}
-                            className="h-full w-auto object-contain"
-                          />
-                        )}
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="hidden sm:flex" />
-              <CarouselNext className="hidden sm:flex" />
-            </Carousel>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 items-center justify-center">
+            {brands.map((brand, index) => (
+              <Card
+                key={index}
+                className="flex items-center justify-center p-4 h-28 bg-card hover:bg-card/90 transition-colors"
+              >
+                {brand.type === 'image' && brand.src && (
+                  <Image
+                    src={brand.src}
+                    alt={brand.name}
+                    width={100}
+                    height={100}
+                    className="h-full w-auto object-contain"
+                  />
+                )}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
