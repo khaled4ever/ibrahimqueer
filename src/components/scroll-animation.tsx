@@ -1,7 +1,7 @@
 'use client';
 
-import { motion, useAnimation, useInView } from 'framer-motion';
-import { useEffect, useRef, type ReactNode } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useRef, type ReactNode } from 'react';
 
 interface ScrollAnimationProps {
   children: ReactNode;
@@ -21,22 +21,15 @@ export function ScrollAnimation({
   delay = 0,
   staggerChildren,
 }: ScrollAnimationProps) {
-  const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
-
-  useEffect(() => {
-    if (isInView) {
-      controls.start('visible');
-    }
-  }, [isInView, controls]);
 
   return (
     <motion.div
       ref={ref}
       className={className}
       initial="hidden"
-      animate={controls}
+      animate={isInView ? 'visible' : 'hidden'}
       variants={variants}
       transition={{
         duration: 0.6,
