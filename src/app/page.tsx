@@ -15,13 +15,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { services, brands, bodyworkImages } from '@/lib/data';
 import { Phone, MapPin, Clock } from 'lucide-react';
@@ -179,34 +172,26 @@ export default function Home() {
               نعيد لسيارتك بريقها ومظهرها الأصلي بأعلى معايير الدقة والجودة.
             </p>
           </div>
-          <div>
-            <Carousel className="w-full max-w-4xl mx-auto">
-              <CarouselContent>
-                {bodyworkImages.map((imgInfo, index) => {
-                  const image = PlaceHolderImages.find(i => i.id === imgInfo.id);
-                  return (
-                    <CarouselItem key={index}>
-                      <Card className="overflow-hidden">
-                        {image && (
-                           <div className="aspect-video relative">
-                            <Image
-                              src={image.imageUrl}
-                              alt={image.description}
-                              fill
-                              className="object-cover"
-                              data-ai-hint={image.imageHint}
-                            />
-                             <div className="absolute top-2 left-2 bg-black/50 text-white text-sm px-3 py-1 rounded-full">{imgInfo.label}</div>
-                           </div>
-                        )}
-                      </Card>
-                    </CarouselItem>
-                  );
-                })}
-              </CarouselContent>
-              <CarouselPrevious className="translate-x-12 sm:translate-x-16" />
-              <CarouselNext className="-translate-x-12 sm:-translate-x-16"/>
-            </Carousel>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+            {bodyworkImages.map((imgInfo, index) => {
+              const image = PlaceHolderImages.find(i => i.id === imgInfo.id);
+              return (
+                <Card key={index} className="overflow-hidden group">
+                  {image && (
+                     <div className="aspect-video relative">
+                      <Image
+                        src={image.imageUrl}
+                        alt={image.description}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        data-ai-hint={image.imageHint}
+                      />
+                       <div className="absolute top-2 left-2 bg-black/50 text-white text-sm px-3 py-1 rounded-full">{imgInfo.label}</div>
+                     </div>
+                  )}
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
