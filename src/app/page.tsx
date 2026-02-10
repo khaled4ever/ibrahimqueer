@@ -68,6 +68,16 @@ export default function Home() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+          <div className="text-center text-white p-4">
+            <h1 className="text-4xl md:text-6xl font-bold font-headline">
+              صيانة متخصصة للسيارات الألمانية والأوروبية والصينية
+            </h1>
+            <p className="mt-4 text-lg md:text-xl">
+              الجودة والخبرة التي تستحقها سيارتك في الرياض
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="brands" className="w-full py-12 bg-secondary">
