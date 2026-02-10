@@ -14,12 +14,6 @@ import {
   SheetClose,
   SheetTitle,
 } from '@/components/ui/sheet';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
 import { useState, useEffect } from 'react';
 import { services } from '@/lib/data';
@@ -109,39 +103,44 @@ export function Header() {
                       </span>
                     </a>
                 </SheetClose>
-                <nav className="flex flex-col gap-3">
-                  {navLinks.map((link) => (
-                    <SheetClose key={link.href} asChild>
-                      <a
-                        href={link.href}
-                        className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors"
-                      >
-                        {link.label}
+                <nav className="flex flex-col gap-4">
+                  <SheetClose asChild>
+                    <a href="#brands" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                      الماركات
+                    </a>
+                  </SheetClose>
+
+                  <div>
+                    <SheetClose asChild>
+                      <a href="#services" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                        خدماتنا
                       </a>
                     </SheetClose>
-                  ))}
+                    <div className="mt-3 flex flex-col gap-3 pr-4">
+                      {services.map((service) => (
+                        <SheetClose key={service.title} asChild>
+                          <a
+                            href="#services"
+                            className="text-base font-normal text-muted-foreground hover:text-primary transition-colors"
+                          >
+                            {service.title}
+                          </a>
+                        </SheetClose>
+                      ))}
+                    </div>
+                  </div>
+
+                  <SheetClose asChild>
+                    <a href="#bodywork" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                      السمكرة والدهان
+                    </a>
+                  </SheetClose>
                   
-                  <Accordion type="single" collapsible className="w-full text-lg font-semibold text-foreground/80">
-                      <AccordionItem value="services" className="border-b-0">
-                        <AccordionTrigger className="py-2 hover:no-underline hover:text-primary transition-colors">
-                          خدماتنا
-                        </AccordionTrigger>
-                        <AccordionContent className="pr-4">
-                          <div className="flex flex-col gap-2 mt-3">
-                            {services.map((service) => (
-                              <SheetClose key={service.title} asChild>
-                                <a
-                                  href="#services"
-                                  className="font-normal text-muted-foreground hover:text-primary"
-                                >
-                                  {service.title}
-                                </a>
-                              </SheetClose>
-                            ))}
-                          </div>
-                        </AccordionContent>
-                      </AccordionItem>
-                  </Accordion>
+                  <SheetClose asChild>
+                    <a href="#contact" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                      تواصل معنا
+                    </a>
+                  </SheetClose>
                 </nav>
               </div>
             </SheetContent>
