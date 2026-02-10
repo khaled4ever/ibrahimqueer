@@ -43,6 +43,12 @@
       "imageHint": "car maintenance"
     },
     {
+      "id": "mobile-workshop",
+      "description": "A branded van equipped as a mobile workshop, parked in a suburban driveway.",
+      "imageUrl": "https://images.unsplash.com/photo-1628177348933-723205f3d6b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZXJ2aWNlJTIwdmFufGVufDB8fHx8fDE3NzE0NTA0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "service van"
+    },
+    {
       "id": "bodywork-before-1",
       "description": "The damaged rear bumper of a white sedan before repair.",
       "imageUrl": "https://images.unsplash.com/photo-1673187139612-6bf684a74815?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYW1hZ2VkJTIwY2FyfGVufDB8fHx8MTc3MDY4NDM5MXww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -57,7 +63,7 @@
     {
       "id": "bodywork-before-2",
       "description": "A car door with a large dent and scratched paint.",
-      "imageUrl": "https://images.unsplash.com/photo-1673187139211-1e7ec3dd60ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBkZW50fGVufDB8fHx8MTc3MDY1NDI3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1673187139211-1e7ec3dd60ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBkZW50fGVufDB8fHx8fDE3NzA2NTQyNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car dent"
     },
     {
