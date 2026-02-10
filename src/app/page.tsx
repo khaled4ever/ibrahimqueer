@@ -102,15 +102,15 @@ export default function Home() {
                     <div className="p-1">
                       <Card className="flex items-center justify-center p-6 h-32 bg-card hover:bg-card/90 transition-colors">
                         {brand.type === 'component' && brand.Logo && (
-                          <brand.Logo className="h-12 w-auto text-foreground" />
+                          <brand.Logo className="h-full w-auto text-foreground" />
                         )}
                         {brand.type === 'image' && brand.src && (
                           <Image
                             src={brand.src}
                             alt={brand.name}
                             width={100}
-                            height={48}
-                            className="h-12 w-auto"
+                            height={100}
+                            className="h-full w-auto"
                           />
                         )}
                       </Card>
