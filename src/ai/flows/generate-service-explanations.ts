@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview Generates service explanations for the AutoKraft Zentrum website.
+ * @fileOverview Generates service explanations for the workshop website.
  *
  * - generateServiceExplanations - A function that generates service explanations.
  * - ServiceExplanationsInput - The input type for the generateServiceExplanations function.
@@ -32,7 +32,7 @@ const prompt = ai.definePrompt({
   output: {schema: ServiceExplanationsOutputSchema},
   prompt: `You are an expert in automotive services, skilled at explaining technical details in an easy-to-understand manner.
 
-  Generate a detailed and informative explanation for the following service offered by AutoKraft Zentrum, a workshop specializing in {{workshopSpecialties}}:
+  Generate a detailed and informative explanation for the following service offered by "المركز الفني للسيارات", a workshop specializing in {{workshopSpecialties}}:
 
   Service: {{serviceName}}
 

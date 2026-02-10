@@ -6,9 +6,9 @@ import { FloatingActionButtons } from '@/components/floating-action-buttons';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'AutoKraft Zentrum',
+  title: 'المركز الفني للسيارات',
   description:
-    'مركز اوتو كرافت هو ورشة صيانة متخصصة في السيارات الألمانية والأوروبية والصينية، نقدم خدمات ميكانيكا، كهرباء، برمجة، سمكرة، وصيانة دورية بأعلى معايير الجودة.',
+    'ورشة صيانة متخصصة في السيارات الألمانية والأوروبية والصينية، نقدم خدمات ميكانيكا، كهرباء، برمجة، سمكرة، وصيانة دورية بأعلى معايير الجودة.',
 };
 
 export default function RootLayout({

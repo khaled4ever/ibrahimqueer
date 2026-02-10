@@ -44,10 +44,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="relative h-full flex flex-col items-center justify-end text-center text-primary-foreground pb-12 md:pb-24 px-4">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter drop-shadow-lg">
-            مركز اوتو كرافت
+            ورشة صيانة السيارات الأوروبية والألمانية والصينية
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/80">
-            خبرتكم الموثوقة لصيانة وإصلاح السيارات الألمانية والأوروبية والصينية
+            خبرتكم الموثوقة لخدمة سيارتكم
           </p>
           <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
             <a href="#contact">تواصل معنا</a>

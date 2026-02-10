@@ -34,7 +34,7 @@ export function Header() {
         <a href="#" className="flex items-center gap-2">
           <Wrench className="w-8 h-8 text-primary" />
           <span className="font-headline text-2xl font-bold text-primary">
-            AutoKraft Zentrum
+            المركز الفني للسيارات
           </span>
         </a>
         <nav className="hidden md:flex items-center gap-6">
