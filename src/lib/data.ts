@@ -8,11 +8,6 @@ import {
   Truck,
 } from 'lucide-react';
 
-import {
-  AudiLogo,
-  VwLogo,
-} from '@/components/icons';
-
 export const services = [
   {
     title: 'قسم الميكانيك',
@@ -84,9 +79,9 @@ export const brands: {
 }[] = [
   { name: 'Mercedes', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mercedes.svg', type: 'image' },
   { name: 'BMW', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/bmw.svg', type: 'image' },
-  { name: 'Audi', Logo: AudiLogo, type: 'component' },
+  { name: 'Audi', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/audi.svg', type: 'image' },
   { name: 'Porsche', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/porsche.svg', type: 'image' },
-  { name: 'Volkswagen', Logo: VwLogo, type: 'component' },
+  { name: 'Volkswagen', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/vw.svg', type: 'image' },
 ];
 
 export const bodyworkImages = [
