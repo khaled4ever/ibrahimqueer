@@ -13,7 +13,7 @@ import {z} from 'genkit';
 
 const ServiceExplanationsInputSchema = z.object({
   serviceName: z.string().describe('The name of the service to explain.'),
-  workshopSpecialties: z.array(z.string()).describe('A list of workshop specialties, e.g., German and European cars.'),
+  workshopSpecialties: z.array(z.string()).describe('A list of workshop specialties, e.g., German, European, and Chinese cars.'),
 });
 export type ServiceExplanationsInput = z.infer<typeof ServiceExplanationsInputSchema>;
 

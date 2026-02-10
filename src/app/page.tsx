@@ -47,7 +47,7 @@ export default function Home() {
             مركز اوتو كرافت
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/80">
-            خبرتكم الموثوقة لصيانة وإصلاح السيارات الألمانية والأوروبية
+            خبرتكم الموثوقة لصيانة وإصلاح السيارات الألمانية والأوروبية والصينية
           </p>
           <Button asChild size="lg" className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
             <a href="#contact">تواصل معنا</a>
@@ -58,7 +58,7 @@ export default function Home() {
       <section id="brands" className="w-full py-12 bg-secondary">
         <div className="container mx-auto px-4">
           <h2 className="font-headline text-3xl font-bold text-center mb-8 text-primary">
-            نتخصص في أرقى الماركات الألمانية
+            نتخصص في أرقى الماركات العالمية
           </h2>
           <Carousel
             opts={{
