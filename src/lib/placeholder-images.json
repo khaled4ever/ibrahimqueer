@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-banner",
+      "description": "A modern auto repair shop with a sleek German sports car on a hydraulic lift, illuminated by bright, clean lighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1632733711679-529326f6db12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhdXRvJTIwcmVwYWlyfGVufDB8fHx8MTc3MDY0Nzc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "auto repair"
+    },
+    {
+      "id": "mechanics",
+      "description": "A mechanic working on the undercarriage of a European sedan.",
+      "imageUrl": "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjBtZWNoYW5pY3xlbnwwfHx8fDE3NzA2ODQzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car mechanic"
+    },
+    {
+      "id": "engine-repair",
+      "description": "Close-up shot of a complex German car engine being assembled.",
+      "imageUrl": "https://images.unsplash.com/photo-1606577924006-27d39b132ae2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXIlMjBlbmdpbmV8ZW58MHx8fHwxNzcwNjYxNjAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car engine"
+    },
+    {
+      "id": "electrical-faults",
+      "description": "A technician using a diagnostic tool on a car's electrical system.",
+      "imageUrl": "https://images.unsplash.com/photo-1654611842276-ffe361f5d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhdXRvJTIwZWxlY3RyaWNzfGVufDB8fHx8MTc3MDY5MDMwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "auto electrics"
+    },
+    {
+      "id": "ecu-programming",
+      "description": "A laptop connected to a car's OBD-II port, showing diagnostic software.",
+      "imageUrl": "https://images.unsplash.com/photo-1718199641744-24cd055edc7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXIlMjBzb2Z0d2FyZXxlbnwwfHx8fDE3NzA2OTAzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car software"
+    },
+    {
+      "id": "bodywork-paint",
+      "description": "A car inside a professional paint booth being sprayed.",
+      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBwYWludGluZ3xlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car painting"
+    },
+    {
+      "id": "routine-maintenance",
+      "description": "A mechanic performing an oil change and checking fluid levels.",
+      "imageUrl": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBtYWludGVuYW5jZXxlbnwwfHx8fDE3NzA2ODQzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car maintenance"
+    },
+    {
+      "id": "bodywork-before-1",
+      "description": "The damaged rear bumper of a white sedan before repair.",
+      "imageUrl": "https://images.unsplash.com/photo-1673187139612-6bf684a74815?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYW1hZ2VkJTIwY2FyfGVufDB8fHx8MTc3MDY4NDM5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "damaged car"
+    },
+    {
+      "id": "bodywork-after-1",
+      "description": "The flawlessly repaired rear bumper of the same white sedan.",
+      "imageUrl": "https://images.unsplash.com/photo-1666884696746-bb3a0cc4c993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZXBhaXJlZCUyMGNhcnxlbnwwfHx8fDE3NzA2ODQzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "repaired car"
+    },
+    {
+      "id": "bodywork-before-2",
+      "description": "A car door with a large dent and scratched paint.",
+      "imageUrl": "https://images.unsplash.com/photo-1673187139211-1e7ec3dd60ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBkZW50fGVufDB8fHx8MTc3MDY1NDI3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car dent"
+    },
+    {
+      "id": "bodywork-after-2",
+      "description": "The same car door after being repaired and repainted to perfection.",
+      "imageUrl": "https://images.unsplash.com/photo-1747811854382-11025aa5180b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJmZWN0JTIwcGFpbnR8ZW58MHx8fHwxNzcwNjg0MzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "perfect paint"
+    }
+  ]
 }
