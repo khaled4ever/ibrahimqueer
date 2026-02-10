@@ -87,6 +87,7 @@ export const brands: {
   { name: 'Rolls Royce', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/rolls-royce.svg', type: 'image' },
   { name: 'Mini', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mini.svg', type: 'image' },
   { name: 'Changan', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/Changan-Symbol-scaled.png', type: 'image' },
+  { name: 'BYD', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/Byd-Logo-01.png', type: 'image' },
 ];
 
 export const bodyworkImages = [
