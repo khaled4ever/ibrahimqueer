@@ -1,5 +1,5 @@
 'use client';
-import { Wrench, ChevronDown, Menu } from 'lucide-react';
+import { Car, ChevronDown, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -46,7 +46,7 @@ export function Header() {
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <Wrench className="w-8 h-8 text-primary" />
+          <Car className="w-8 h-8 text-primary" />
           <span className="font-headline text-xl sm:text-2xl font-bold text-primary">
             المركز الفني للسيارات
           </span>
@@ -97,7 +97,7 @@ export function Header() {
               <div className="flex flex-col p-6">
                 <SheetClose asChild>
                     <a href="#" className="flex items-center gap-2 mb-8">
-                      <Wrench className="w-8 h-8 text-primary" />
+                      <Car className="w-8 h-8 text-primary" />
                       <span className="font-headline text-xl font-bold text-primary">
                         المركز الفني
                       </span>
