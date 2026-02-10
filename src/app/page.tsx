@@ -94,14 +94,25 @@ export default function Home() {
               className="w-full"
             >
               <CarouselContent>
-                {brands.map((Brand, index) => (
+                {brands.map((brand, index) => (
                   <CarouselItem
                     key={index}
                     className="basis-1/3 md:basis-1/4 lg:basis-1/5"
                   >
                     <div className="p-1">
                       <Card className="flex items-center justify-center p-6 h-32 bg-card hover:bg-card/90 transition-colors">
-                        <Brand className="h-12 w-auto text-foreground" />
+                        {brand.type === 'component' && brand.Logo && (
+                          <brand.Logo className="h-12 w-auto text-foreground" />
+                        )}
+                        {brand.type === 'image' && brand.src && (
+                          <Image
+                            src={brand.src}
+                            alt={brand.name}
+                            width={100}
+                            height={48}
+                            className="h-12 w-auto"
+                          />
+                        )}
                       </Card>
                     </div>
                   </CarouselItem>
