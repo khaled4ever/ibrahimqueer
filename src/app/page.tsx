@@ -36,7 +36,7 @@ export default function Home() {
     name: 'المركز الفني للسيارات',
     image: heroImage?.imageUrl,
     url: 'https://auto-repair-center-sa.com', // Placeholder URL
-    telephone: '+966555123456',
+    telephone: '+966552076668',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '123 شارع الصناعية',
@@ -56,7 +56,7 @@ export default function Home() {
       opens: '08:00',
       closes: '19:00',
     },
-    sameAs: ['https://wa.me/966555123456'],
+    sameAs: ['https://wa.me/966552076668'],
   };
 
   return (
@@ -254,8 +254,8 @@ export default function Home() {
                 <div className="flex flex-col items-center md:items-start">
                   <Phone className="w-10 h-10 text-primary mb-3" />
                   <h3 className="font-headline text-lg font-bold">الهاتف</h3>
-                  <a href="tel:+966555123456" className="text-muted-foreground hover:text-primary transition-colors">
-                    +966 55 512 3456
+                  <a href="tel:+966552076668" className="text-muted-foreground hover:text-primary transition-colors">
+                    +966 55 207 6668
                   </a>
                 </div>
                 <div className="flex flex-col items-center md:items-start">

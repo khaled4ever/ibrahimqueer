@@ -8,7 +8,7 @@ export function FloatingActionButtons() {
 
   return (
     <div className="fixed bottom-5 left-5 z-50 flex flex-col gap-4">
-      <a href="https://wa.me/966555123456" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/966552076668" target="_blank" rel="noopener noreferrer">
         <Button
           className={cn(
             buttonClasses,
@@ -19,7 +19,7 @@ export function FloatingActionButtons() {
           <span>راسلنا واتس اب</span>
         </Button>
       </a>
-      <a href="tel:+966555123456">
+      <a href="tel:+966552076668">
         <Button
           className={cn(
             buttonClasses,

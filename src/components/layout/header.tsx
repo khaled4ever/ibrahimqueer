@@ -80,7 +80,7 @@ export function Header() {
         </nav>
         
         <Button asChild className="hidden md:flex">
-          <a href="tel:+966555123456">اتصل الآن</a>
+          <a href="tel:+966552076668">اتصل الآن</a>
         </Button>
 
         {/* Mobile Navigation */}
