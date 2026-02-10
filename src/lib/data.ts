@@ -74,7 +74,6 @@ export const services = [
 export const brands: {
   name: string;
   type: 'component' | 'image';
-  Logo?: React.FC<React.SVGProps<SVGSVGElement>>;
   src?: string;
 }[] = [
   { name: 'Mercedes', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mercedes.svg', type: 'image' },
@@ -82,6 +81,11 @@ export const brands: {
   { name: 'Audi', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/audi.svg', type: 'image' },
   { name: 'Porsche', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/porsche.svg', type: 'image' },
   { name: 'Volkswagen', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/vw.svg', type: 'image' },
+  { name: 'Bentley', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/bentley.svg', type: 'image' },
+  { name: 'Land Rover', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/land-rover.svg', type: 'image' },
+  { name: 'Jaguar', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/jaguar.svg', type: 'image' },
+  { name: 'Rolls Royce', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/rolls-royce.svg', type: 'image' },
+  { name: 'Mini', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mini.svg', type: 'image' },
 ];
 
 export const bodyworkImages = [
