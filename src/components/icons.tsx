@@ -49,35 +49,6 @@ export const MercedesLogo = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const PorscheLogo = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <path
-      d="M3 10h18M3 14h18"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-    />
-    <path
-      d="M14 3v18H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M17 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
 export const VwLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"

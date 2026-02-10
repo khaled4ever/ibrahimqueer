@@ -10,7 +10,6 @@ import {
 
 import {
   AudiLogo,
-  PorscheLogo,
   VwLogo,
 } from '@/components/icons';
 
@@ -86,7 +85,7 @@ export const brands: {
   { name: 'Mercedes', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/mercedes.svg', type: 'image' },
   { name: 'BMW', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/bmw.svg', type: 'image' },
   { name: 'Audi', Logo: AudiLogo, type: 'component' },
-  { name: 'Porsche', Logo: PorscheLogo, type: 'component' },
+  { name: 'Porsche', src: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/porsche.svg', type: 'image' },
   { name: 'Volkswagen', Logo: VwLogo, type: 'component' },
 ];
 
