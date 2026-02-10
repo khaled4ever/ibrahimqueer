@@ -186,7 +186,6 @@ export default function Home() {
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
                         data-ai-hint={image.imageHint}
                       />
-                       <div className="absolute top-2 left-2 bg-black/50 text-white text-sm px-3 py-1 rounded-full">{imgInfo.label}</div>
                      </div>
                   )}
                 </Card>
