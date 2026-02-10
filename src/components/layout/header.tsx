@@ -12,6 +12,7 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetTitle,
 } from '@/components/ui/sheet';
 import {
   Accordion,
@@ -98,6 +99,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">القائمة</SheetTitle>
               <div className="flex flex-col p-6">
                 <SheetClose asChild>
                     <a href="#" className="flex items-center gap-2 mb-8">
