@@ -27,3 +27,4 @@ This website serves as the online presence for the auto workshop. It features:
 - Contact information and business hours.
 - AI-generated content for service descriptions via Genkit.
 - A responsive design for all screen sizes.
+# ibrahimqueer
