@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { Car, ChevronDown, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -19,9 +20,9 @@ import { useState, useEffect } from 'react';
 import { services } from '@/lib/data';
 
 const navLinks = [
-  { href: '#brands', label: 'الماركات' },
-  { href: '#bodywork', label: 'السمكرة والدهان' },
-  { href: '#contact', label: 'تواصل معنا' },
+  { href: '/brands', label: 'الماركات' },
+  { href: '/bodywork', label: 'السمكرة والدهان' },
+  { href: '/contact', label: 'تواصل معنا' },
 ];
 
 export function Header() {
@@ -38,44 +39,47 @@ export function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-40 w-full transition-all duration-300',
+        'sticky top-0 z-40 w-full transition-all duration-300 border-b',
         hasScrolled
-          ? 'bg-background/80 backdrop-blur-sm border-b'
-          : 'bg-transparent'
+          ? 'bg-background/80 backdrop-blur-sm'
+          : 'bg-background'
       )}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Car className="w-8 h-8 text-primary" />
           <span className="font-headline text-xl sm:text-2xl font-bold text-primary">
             المركز الفني للسيارات
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#brands" className="font-semibold text-foreground/80 hover:text-primary transition-colors">الماركات</a>
+          <Link href="/brands" className="font-semibold text-foreground/80 hover:text-primary transition-colors">الماركات</Link>
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 font-semibold text-foreground/80 hover:text-primary transition-colors focus:outline-none">
               <span>خدماتنا</span>
               <ChevronDown className="h-4 w-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link href="/services">جميع الخدمات</Link>
+              </DropdownMenuItem>
               {services.map((service) => (
                 <DropdownMenuItem key={service.title} asChild>
-                  <a href="#services">{service.title}</a>
+                  <Link href="/services">{service.title}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          {navLinks.filter(l => l.href.startsWith('#') && l.href !== '#brands').map((link) => (
-            <a
+          {navLinks.filter(l => l.href !== '/brands').map((link) => (
+            <Link
               key={link.href}
               href={link.href}
               className="font-semibold text-foreground/80 hover:text-primary transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         
@@ -96,50 +100,50 @@ export function Header() {
               <SheetTitle className="sr-only">القائمة</SheetTitle>
               <div className="flex flex-col p-6">
                 <SheetClose asChild>
-                    <a href="#" className="flex items-center gap-2 mb-8">
+                    <Link href="/" className="flex items-center gap-2 mb-8">
                       <Car className="w-8 h-8 text-primary" />
                       <span className="font-headline text-xl font-bold text-primary">
                         المركز الفني
                       </span>
-                    </a>
+                    </Link>
                 </SheetClose>
                 <nav className="flex flex-col gap-4">
                   <SheetClose asChild>
-                    <a href="#brands" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                    <Link href="/brands" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                       الماركات
-                    </a>
+                    </Link>
                   </SheetClose>
 
                   <div>
                     <SheetClose asChild>
-                      <a href="#services" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                      <Link href="/services" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                         خدماتنا
-                      </a>
+                      </Link>
                     </SheetClose>
                     <div className="mt-3 flex flex-col gap-3 pr-4">
                       {services.map((service) => (
                         <SheetClose key={service.title} asChild>
-                          <a
-                            href="#services"
+                          <Link
+                            href="/services"
                             className="text-base font-normal text-muted-foreground hover:text-primary transition-colors"
                           >
                             {service.title}
-                          </a>
+                          </Link>
                         </SheetClose>
                       ))}
                     </div>
                   </div>
 
                   <SheetClose asChild>
-                    <a href="#bodywork" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                    <Link href="/bodywork" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                       السمكرة والدهان
-                    </a>
+                    </Link>
                   </SheetClose>
                   
                   <SheetClose asChild>
-                    <a href="#contact" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                    <Link href="/contact" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                       تواصل معنا
-                    </a>
+                    </Link>
                   </SheetClose>
                 </nav>
               </div>
