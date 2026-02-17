@@ -67,7 +67,7 @@ export function Header() {
               </DropdownMenuItem>
               {services.map((service) => (
                 <DropdownMenuItem key={service.title} asChild>
-                  <Link href="/#services">{service.title}</Link>
+                  <Link href={`/#service-${service.title.replace(/ /g, '-')}`}>{service.title}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
@@ -124,7 +124,7 @@ export function Header() {
                       {services.map((service) => (
                         <SheetClose key={service.title} asChild>
                           <Link
-                            href="/#services"
+                            href={`/#service-${service.title.replace(/ /g, '-')}`}
                             className="text-base font-normal text-muted-foreground hover:text-primary transition-colors"
                           >
                             {service.title}

@@ -76,7 +76,7 @@ function ServicesSection() {
               (img) => img.id === service.image
             );
             return (
-              <div key={service.title}>
+              <div id={`service-${service.title.replace(/ /g, '-')}`} key={service.title} className="scroll-mt-24">
                 <Card className="overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full">
                   <CardHeader className="p-0">
                     {serviceImage && (
