@@ -20,9 +20,9 @@ import { useState, useEffect } from 'react';
 import { services } from '@/lib/data';
 
 const navLinks = [
-  { href: '/brands', label: 'الماركات' },
-  { href: '/bodywork', label: 'السمكرة والدهان' },
-  { href: '/contact', label: 'تواصل معنا' },
+  { href: '/#brands', label: 'الماركات' },
+  { href: '/#bodywork', label: 'السمكرة والدهان' },
+  { href: '/#contact', label: 'تواصل معنا' },
 ];
 
 export function Header() {
@@ -55,7 +55,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/brands" className="font-semibold text-foreground/80 hover:text-primary transition-colors">الماركات</Link>
+          <Link href="/#brands" className="font-semibold text-foreground/80 hover:text-primary transition-colors">الماركات</Link>
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 font-semibold text-foreground/80 hover:text-primary transition-colors focus:outline-none">
               <span>خدماتنا</span>
@@ -63,16 +63,16 @@ export function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
-                <Link href="/services">جميع الخدمات</Link>
+                <Link href="/#services">جميع الخدمات</Link>
               </DropdownMenuItem>
               {services.map((service) => (
                 <DropdownMenuItem key={service.title} asChild>
-                  <Link href="/services">{service.title}</Link>
+                  <Link href="/#services">{service.title}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-          {navLinks.filter(l => l.href !== '/brands').map((link) => (
+          {navLinks.filter(l => l.href !== '/#brands').map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -109,14 +109,14 @@ export function Header() {
                 </SheetClose>
                 <nav className="flex flex-col gap-4">
                   <SheetClose asChild>
-                    <Link href="/brands" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                    <Link href="/#brands" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                       الماركات
                     </Link>
                   </SheetClose>
 
                   <div>
                     <SheetClose asChild>
-                      <Link href="/services" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                      <Link href="/#services" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                         خدماتنا
                       </Link>
                     </SheetClose>
@@ -124,7 +124,7 @@ export function Header() {
                       {services.map((service) => (
                         <SheetClose key={service.title} asChild>
                           <Link
-                            href="/services"
+                            href="/#services"
                             className="text-base font-normal text-muted-foreground hover:text-primary transition-colors"
                           >
                             {service.title}
@@ -135,13 +135,13 @@ export function Header() {
                   </div>
 
                   <SheetClose asChild>
-                    <Link href="/bodywork" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                    <Link href="/#bodywork" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                       السمكرة والدهان
                     </Link>
                   </SheetClose>
                   
                   <SheetClose asChild>
-                    <Link href="/contact" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
+                    <Link href="/#contact" className="text-lg font-semibold text-foreground/80 hover:text-primary transition-colors">
                       تواصل معنا
                     </Link>
                   </SheetClose>
